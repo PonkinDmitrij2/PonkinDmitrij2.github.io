@@ -29,7 +29,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
@@ -51,30 +50,6 @@ body {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-
-  body {
-    color: red;
-  }
 }
 
 
@@ -199,17 +174,6 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-
-  .data-acquisition__input,
-  .data-acquisition__submit {
-    width: 50%;
-  }
-}
-
 
 /* ========================================
    $DATA-OUTPUT
@@ -236,4 +200,38 @@ body {
   margin-top: auto;
   color: #fff;
   background-image: linear-gradient(110.99379763264005deg, rgba(44, 100, 125, 1) 5.911420204978038%,rgba(93, 215, 173, 1) 95.95534407027817%);
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .data-acquisition__input,
+  .data-acquisition__submit {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  body {
+    color: red;
+  }
 }
