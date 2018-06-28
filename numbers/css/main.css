@@ -238,7 +238,7 @@ input[type="radio"].visually-hidden {
 .contacts__link {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 4px;
+  margin-left: 4px;
   text-decoration: none;
   opacity: 0.4;
 }
