@@ -257,9 +257,6 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
   .page-header {
     margin-bottom: 50px;
   }
