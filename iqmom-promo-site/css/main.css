@@ -40,7 +40,6 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
