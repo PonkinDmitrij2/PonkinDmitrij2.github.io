@@ -6,17 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>IQmom app</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=B612+Mono:700|Roboto:300,400,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
   <div class="page-wrapper">
-    <header class="page-header"></header>
+    <header class="page-header">
+      <div class="container">
+
+        <div class="logo">
+          <span class="logo__text">
+            <span class="logo__text-colored">IQ</span>mom
+          </span>
+        </div>
+
+        <div class="page-header__slogan">Грудное вскармливание</div>
+
+        <div class="page-header__store-buttons">
+          <a class="btn  store-btn  store-btn--apple"
+            href="https://apps.apple.com/ru/app/iqmom/id1450298288"
+            target="_blank">
+            <span class="visually-hidden">Загрузить в App Store</span>
+            <img class="store-btn__img" src="./img/icons/app-store-btn.png"
+              alt="">
+          </a>
+          <a class="btn  store-btn  store-btn--google"
+            href="https://play.google.com/store/apps/details?id=ru.iqmom.app"
+            target="_blank">
+            <span class="visually-hidden">Загрузить в Google Play</span>
+            <img class="store-btn__img" src="./img/icons/google-play-btn.png"
+              alt="">
+          </a>
+        </div>
+
+      </div>
+    </header>
 
     <main class="main">
       <h1 class="visually-hidden">Мобильное приложение IQmom</h1>
-
+      <!-- <img src="./img/phone.png" alt="" class="test"> -->
       <section class="about">
         <div class="container">
           <h2 class="about__title">О приложении</h2>
@@ -98,7 +130,9 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">Контакты</div>
+      <div class="container">
+        <!-- <img src="./img/phone-no-bg.png" alt=""> -->
+      </div>
     </footer>
   </div>
 </body>
