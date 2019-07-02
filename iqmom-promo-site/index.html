@@ -19,27 +19,24 @@
       <div class="container">
 
         <div class="logo">
-          <span class="logo__text">
+          <img class="logo__img" src="./img/logo.svg" alt="Логотип">
+          <div class="logo__text">
             <span class="logo__text-colored">IQ</span>mom
-          </span>
+          </div>
         </div>
 
         <div class="page-header__slogan">Грудное вскармливание</div>
 
-        <div class="page-header__store-buttons">
+        <div class="actions">
           <a class="btn  store-btn  store-btn--apple"
             href="https://apps.apple.com/ru/app/iqmom/id1450298288"
             target="_blank">
             <span class="visually-hidden">Загрузить в App Store</span>
-            <img class="store-btn__img" src="./img/icons/app-store-btn.png"
-              alt="">
           </a>
           <a class="btn  store-btn  store-btn--google"
             href="https://play.google.com/store/apps/details?id=ru.iqmom.app"
             target="_blank">
             <span class="visually-hidden">Загрузить в Google Play</span>
-            <img class="store-btn__img" src="./img/icons/google-play-btn.png"
-              alt="">
           </a>
         </div>
 
@@ -48,27 +45,37 @@
 
     <main class="main">
       <h1 class="visually-hidden">Мобильное приложение IQmom</h1>
-      <!-- <img src="./img/phone.png" alt="" class="test"> -->
-      <section class="about">
+
+      <section class="promo">
         <div class="container">
-          <h2 class="about__title">О приложении</h2>
+          <h2 class="visually-hidden">Предварительный обзор</h2>
           <div class="row">
-            <div class="col-lg-7  mb-5">
-              <div class="photo  photo--size-16x9">
-                <img class="photo__img" src="./img/baby-1.jpg" alt="">
+            <div class="col-md-4">
+              <div class="promo__photo">
+                <img class="promo__img" src="./img/phone1.jpg"
+                  alt="Мобильное приложение IQmom">
               </div>
             </div>
-            <div class="col-lg-5  d-flex  mb-5  bg-light">
-              <div class="about__descr">
-                <p class="about__text">Вам больно кормить грудью? На сосках есть
+            <div class="col-md-8">
+              <div class="promo__descr  text-center">
+                <p class="promo__lead">Вам больно кормить грудью?</p>
+                <p class="promo__text">На сосках есть
                   трещинки или ссадины? Возникают часто лактостазы? Малыш плохо
                   прибавляет в весе и его выделения ниже нормы? Переживаете, что
                   молоко "перегорит", "закончится", а вы бы хотели кормить
-                  грудью
-                  до года и более?</p>
+                  грудью до года и более?</p>
               </div>
             </div>
-            <div class="col-lg-5  d-flex  mb-5  bg-light">
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="visually-hidden">О приложении</h2>
+          <div class="row">
+
+            <div class="col-lg-5  d-flex  mb-5">
               <div class="about__descr">
                 <p class="about__text">Решением всех этих вопросов является
                   качественное прикладывание к груди:</p>
@@ -83,16 +90,21 @@
               </div>
             </div>
             <div class="col-lg-7  mb-5">
-              <div class="photo  photo--size-16x9">
-                <img class="photo__img" src="./img/baby-2.jpg" alt="">
+              <div class="about__photo">
+                <div class="about__img-wrap">
+                  <img class="about__img" src="./img/baby-3.jpg" alt="">
+                </div>
               </div>
             </div>
+
             <div class="col-lg-7  mb-5">
-              <div class="photo  photo--size-16x9">
-                <img class="photo__img" src="./img/baby-3.jpg" alt="">
+              <div class="about__photo">
+                <div class="about__img-wrap">
+                  <img class="about__img" src="./img/baby-2.jpg" alt="">
+                </div>
               </div>
             </div>
-            <div class="col-lg-5  d-flex  mb-5  bg-light">
+            <div class="col-lg-5  d-flex  mb-5">
               <div class="about__descr">
                 <p class="about__text">Всё это зависит от того, насколько верно
                   малыш приложен к груди!</p>
@@ -104,23 +116,47 @@
                   полезное и вкусное молочко!</p>
               </div>
             </div>
-            <div class="col-lg-5  d-flex  mb-5  bg-light">
-              <div class="about__descr">
-                <p class="about__text">Приобретая это приложение, вы получаете
-                  ключ к успешному и длительному кормлению грудью! </p>
-                <p class="about__text">Вы начнёте получать радость и
+
+          </div>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="container">
+          <h2 class="visually-hidden">Заключение</h2>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="promo__descr">
+                <p class="promo__lead  text-center">Приобретая это приложение,
+                  вы получаете
+                  ключ к успешному и длительному кормлению грудью!</p>
+                <p class="promo__text">Вы начнёте получать радость и
                   удовольствие от грудного вскармливания.</p>
-                <p class="about__text">Вы сэкономите очень большую сумму денег,
+                <p class="promo__text">Вы сэкономите очень большую сумму денег,
                   которую могли бы потратить на искусственную смесь и визиты к
                   врачам в будущем. Ведь, прикладывая своего малыша к груди
                   верно, вы обеспечиваете ему, и достаточное количество молока,
                   и хорошие прибавки в весе. И, конечно, вносите бесценный вклад
                   в его здоровье!</p>
+
+                <div class="actions  promo__actions">
+                  <a class="btn  store-btn  store-btn--apple"
+                    href="https://apps.apple.com/ru/app/iqmom/id1450298288"
+                    target="_blank">
+                    <span class="visually-hidden">Загрузить в App Store</span>
+                  </a>
+                  <a class="btn  store-btn  store-btn--google"
+                    href="https://play.google.com/store/apps/details?id=ru.iqmom.app"
+                    target="_blank">
+                    <span class="visually-hidden">Загрузить в Google Play</span>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-7  mb-5">
-              <div class="photo  photo--size-16x9">
-                <img class="photo__img" src="./img/baby-4.jpg" alt="">
+            <div class="col-md-4">
+              <div class="promo__photo">
+                <img class="promo__img" src="./img/phone2.jpg"
+                  alt="Мобильное приложение IQmom">
               </div>
             </div>
           </div>
@@ -131,7 +167,7 @@
 
     <footer class="page-footer">
       <div class="container">
-        <!-- <img src="./img/phone-no-bg.png" alt=""> -->
+
       </div>
     </footer>
   </div>
