@@ -1,6 +1,10 @@
 /* ========================================
    $COMMON
    ======================================== */
+:root {
+  --main-color: #505050;
+}
+
 html {
   box-sizing: border-box;
   width: 100%;
@@ -26,7 +30,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: #505050;
+  color: var(--main-color);
   background-color: #fff;
 }
 
@@ -115,7 +119,7 @@ img {
   right: 0;
   z-index: 100;
   padding: 10px 0;
-  color: #000000;
+  color: var(--main-color);
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
@@ -125,7 +129,6 @@ img {
   font-size: 40px;
   font-weight: 400;
   line-height: 1;
-  color: #ed4e50;
 }
 
 .logo__img {
@@ -224,11 +227,12 @@ img {
   color: inherit;
   text-decoration: none;
   border: 1px solid transparent;
+  border-bottom-color: inherit;
 }
 
 .privacy-policy__link:hover,
 .privacy-policy__link:focus {
-  border-bottom-color: inherit;
+  border-bottom-color: transparent;
 }
 
 
@@ -239,7 +243,7 @@ img {
 .page-footer {
   margin-top: auto;
   padding: 10px 0;
-  color: #000000;
+  color: var(--main-color);
   background-image: radial-gradient( circle farthest-corner at 0.2% 0.5%, rgba(181,255,255,1)  0%, rgba(252,165,241,1) 100.2% );
 }
 
