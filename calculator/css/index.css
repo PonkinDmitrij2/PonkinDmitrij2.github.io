@@ -341,31 +341,87 @@ img {
 .sidebar {
   position: fixed;
   top: 40px;
-  left: -85%;
   bottom: 0;
   z-index: 100;
-  padding: 0 10px;
+  padding: 0 15px;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: #fdbec0;
-  transition: left 0.3s ease-in-out;
+  color: #585858;
+  background-color: #f8f8f8;
+  transition: left 0.4s ease-in-out;
 }
 
 @media (orientation: landscape) {
   .sidebar {
-    width: 40%;
+    width: 50%;
+    left: -50%;
   }
 }
 
 @media (orientation: portrait) {
   .sidebar {
     width: 85%;
+    left: -85%;
   }
 }
+
+/* ==================== $NAV ==================== */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.nav__btn {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid #ededed;
+  font: inherit;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.nav__btn:last-child {
+  border-bottom: none;
+}
+
+.nav__btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 60px;
+  height: 1px;
+  background-color: #f8f8f8;
+}
+
+.nav__icon {
+  display: flex;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #026a9d;
+  overflow: hidden;
+  background-image: url("../img/calc-opt.svg");
+  background-size: 28px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.nav__text {}
+
 
 .sidebar--show {
   left: 0;
 }
+/* ==================== / NAV ==================== */
 
 .overlay {
   position: fixed;
@@ -375,12 +431,10 @@ img {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay--show {
   display: block;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 /* ==================== / SIDEBAR ==================== */
