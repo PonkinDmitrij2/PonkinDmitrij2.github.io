@@ -366,6 +366,18 @@ img {
 
 
 
+/* ==================== $SCREEN ==================== */
+.screen {
+  display: none;
+}
+
+.screen--show {
+  display: block;
+}
+/* ==================== / SCREEN ==================== */
+
+
+
 /* ==================== $SIDEBAR ==================== */
 .sidebar {
   position: fixed;
