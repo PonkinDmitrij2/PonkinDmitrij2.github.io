@@ -233,6 +233,8 @@ img {
 .calculator__descr {
   position: relative;
   top: 6px;
+  font-size: 17px;
+  text-align: center;
 }
 
 .calculator__label {

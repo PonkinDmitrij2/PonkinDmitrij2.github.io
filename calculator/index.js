@@ -12,9 +12,6 @@ const switchSidebar = () => {
   overlay.classList.toggle('overlay--show');
 };
 
-menuBtn.addEventListener('click', switchSidebar);
-overlay.addEventListener('click', switchSidebar);
-
 const switchScreen = (screenId) => {
   const mainContent = document.querySelector('.main-content');
   const SCREEN_ACTIVE = 'screen--show';
@@ -29,7 +26,7 @@ const switchScreen = (screenId) => {
 };
 
 const navBtnHandler = ({ target }) => {
-  const button = target.closest('button:not(.nav__btn--active)');
+  const button = target.closest(`button:not(.${NAV_BTN_ACTIVE})`);
 
   if (button) {
     switchScreen(button.dataset.screen);
@@ -37,5 +34,8 @@ const navBtnHandler = ({ target }) => {
 
   switchSidebar();
 };
+
+menuBtn.addEventListener('click', switchSidebar);
+overlay.addEventListener('click', switchSidebar);
 
 navigation.addEventListener('click', navBtnHandler);
