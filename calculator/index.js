@@ -22,6 +22,7 @@ const switchScreen = (screenId) => {
   };
 
   toggleActive(mainContent, SCREEN_ACTIVE, `[id=${screenId}]`);
+  window.scroll(0, 0);
   toggleActive(navigation, NAV_BTN_ACTIVE, `[data-screen=${screenId}]`);
 };
 
