@@ -140,7 +140,7 @@ img {
 .toast__text {
   display: block;
   padding: 0 10px;
-  padding-bottom: 5px;
+  padding-bottom: 9px;
   border-bottom: 1px solid #ededed;
   text-align: center;
 }
@@ -148,7 +148,7 @@ img {
 .toast__action {
   display: block;
   padding: 0 10px;
-  padding-top: 5px;
+  padding-top: 10px;
   font-size: 80%;
   text-align-last: left;
   color: #2196f3;
