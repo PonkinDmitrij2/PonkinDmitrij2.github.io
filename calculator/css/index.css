@@ -118,6 +118,73 @@ img {
 
 
 
+/* ==================== $TOAST ==================== */
+.toast {
+  position: absolute;
+  bottom: calc(100% + 70px);
+  left: 50%;
+  display: none;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  text-transform: initial;
+  color: #000;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 16px 8px rgba(0, 0, 0, 0.25);
+}
+
+.toast__text {
+  display: block;
+  padding: 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+}
+
+.toast__action {
+  display: block;
+  padding: 0 10px;
+  padding-top: 5px;
+  font-size: 80%;
+  text-align-last: left;
+  color: #2196f3;
+}
+
+@-moz-keyframes tooltip {
+  100% {
+    opacity: 1;
+    bottom: calc(100% + 30px);
+  }
+}
+
+@-webkit-keyframes tooltip {
+  100% {
+    opacity: 1;
+    bottom: calc(100% + 30px);
+  }
+}
+
+@-o-keyframes tooltip {
+  100% {
+    opacity: 1;
+    bottom: calc(100% + 30px);
+  }
+}
+
+@keyframes tooltip {
+  100% {
+    opacity: 1;
+    bottom: calc(100% + 30px);
+  }
+}
+/* ==================== / TOAST ==================== */
+
+
+
 /* ==================== $PAGE-HEADER ==================== */
 .page-header {
   position: fixed;
@@ -348,12 +415,12 @@ img {
   transition: all 0ms ease;
 }
 
-.calculator__calc-btn:hover {
+.calculator__calc-btn:focus {
   color: #fff;
   box-shadow: none;
 }
 
-.calculator__calc-btn:hover:before {
+.calculator__calc-btn:focus:before {
   position: absolute;
   content: '';
   width: 100%;
@@ -363,6 +430,11 @@ img {
   left: 0%;
   z-index: -1;
   transition: all 200ms ease;
+}
+
+.calculator__calc-btn:focus .toast {
+  display: block;
+  animation: tooltip 0.7s ease forwards;
 }
 /* ==================== / CALCULATOR ==================== */
 

@@ -27,7 +27,7 @@ const switchScreen = (screenId) => {
 };
 
 const navBtnHandler = ({ target }) => {
-  const button = target.closest(`button:not(.${NAV_BTN_ACTIVE})`);
+  const button = target.closest(`.nav__btn:not(.${NAV_BTN_ACTIVE})`);
 
   if (button) {
     switchScreen(button.dataset.screen);
@@ -35,6 +35,8 @@ const navBtnHandler = ({ target }) => {
 
   switchSidebar();
 };
+
+const calculate = () => {};
 
 menuBtn.addEventListener('click', switchSidebar);
 overlay.addEventListener('click', switchSidebar);
