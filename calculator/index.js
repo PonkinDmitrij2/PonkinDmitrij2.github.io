@@ -36,9 +36,30 @@ const navBtnHandler = ({ target }) => {
   switchSidebar();
 };
 
-const calculate = () => {};
+const calculator = {
+  result: 0,
+
+  calc() {
+    const values = [...document.querySelectorAll('.calculator__field')]
+      .sort((a, b) => Number(a.dataset.field) - Number(b.dataset.field))
+      .map((field) => Number(field.value));
+
+    this.result = (values[0] - (values[1] * values[2]) + values[3]) - ((values[4] + values[5]) / 2);
+
+    return this.result;
+  },
+};
 
 menuBtn.addEventListener('click', switchSidebar);
 overlay.addEventListener('click', switchSidebar);
 
 navigation.addEventListener('click', navBtnHandler);
+
+const calcBtn = document.querySelector('.calculator__calc-btn');
+
+const calcBtnHandler = () => {
+  const calcResultShow = document.querySelector('.calculator__calc-btn .toast__result');
+  calcResultShow.textContent = calculator.calc();
+};
+
+calcBtn.addEventListener('click', calcBtnHandler);

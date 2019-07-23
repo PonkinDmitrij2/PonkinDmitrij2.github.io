@@ -126,7 +126,6 @@ img {
   display: none;
   width: 100%;
   max-width: 350px;
-  padding: 10px 0;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   text-transform: initial;
@@ -139,16 +138,16 @@ img {
 
 .toast__text {
   display: block;
-  padding: 0 10px;
-  padding-bottom: 9px;
+  padding: 10px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #ededed;
   text-align: center;
 }
 
 .toast__action {
   display: block;
-  padding: 0 10px;
-  padding-top: 10px;
+  padding: 10px;
+  padding-top: 8px;
   font-size: 80%;
   text-align-last: left;
   color: #2196f3;

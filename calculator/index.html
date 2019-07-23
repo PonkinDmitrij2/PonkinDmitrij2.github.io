@@ -32,7 +32,7 @@
             <div class="calculator__descr">Суммированный вес использованных памперсов за 24 часа
             </div>
             <label class="calculator__label">
-              <input class="calculator__field" id="field-5" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="1" id="field-5" type="number" placeholder=" ">
               <span class="calculator__placeholder">в граммах</span>
             </label>
           </div>
@@ -40,7 +40,7 @@
           <div class="calculator__row">
             <div class="calculator__descr">Вес одного чистого (сухого) памперса</div>
             <label class="calculator__label">
-              <input class="calculator__field" id="field-2" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="2" id="field-2" type="number" placeholder=" ">
               <span class="calculator__placeholder">в граммах</span>
             </label>
           </div>
@@ -48,7 +48,7 @@
           <div class="calculator__row">
             <div class="calculator__descr">Количество использованных памперсов за 24 часа</div>
             <label class="calculator__label">
-              <input class="calculator__field" id="field-3" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="3" id="field-3" type="number" placeholder=" ">
               <span class="calculator__placeholder">штук</span>
             </label>
           </div>
@@ -56,7 +56,7 @@
           <div class="calculator__row">
             <div class="calculator__descr">Количество мочеиспусканий вне памперса за сутки</div>
             <label for="" class="calculator__label">
-              <select class="calculator__field  calculator__select" id="field-4">
+              <select class="calculator__field  calculator__select" data-field="4" id="field-4">
                 <option value="0" class="calculator__option" selected>0</option>
                 <option value="30" class="calculator__option">1</option>
                 <option value="60" class="calculator__option">2</option>
@@ -81,7 +81,7 @@
           <div class="calculator__row">
             <div class="calculator__descr">Объём докорма за сутки</div>
             <label class="calculator__label">
-              <input class="calculator__field" id="field-6" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="5" id="field-6" type="number" placeholder=" ">
               <span class="calculator__placeholder">в миллилитрах</span>
             </label>
           </div>
@@ -89,14 +89,14 @@
           <div class="calculator__row">
             <div class="calculator__descr">Объём воды за сутки (если есть допаивание)</div>
             <label class="calculator__label">
-              <input class="calculator__field" id="field-7" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="6" id="field-7" type="number" placeholder=" ">
               <span class="calculator__placeholder">в миллилитрах</span>
             </label>
           </div>
 
-          <button class="calculator__calc-btn  calc-btn" type="button">
+          <button class="calculator__calc-btn" type="button">
             Рассчитать
-            <span class="toast  calc-btn__toast">
+            <span class="toast">
               <span class="toast__text">
                 Результат: <span class="toast__result"></span> гр.
               </span>
