@@ -118,6 +118,48 @@ img {
 
 
 
+/* ==================== $HELPERS ==================== */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-italic {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.custom-list {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-list__item {
+  list-style: none;
+}
+
+.custom-list__item::before {
+  content: "";
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  background-image: url("../img/ok.svg");
+}
+
+/* ==================== / HELPERS ==================== */
+
+
+
 /* ==================== $TOAST ==================== */
 .toast {
   position: absolute;
@@ -148,9 +190,23 @@ img {
   display: block;
   padding: 10px;
   padding-top: 8px;
+}
+
+.toast__btn {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #dae0e5;
+  border-radius: 3px;
   font-size: 80%;
-  text-align-last: left;
+  text-align: center;
+  vertical-align: middle;
   color: #2196f3;
+  background-color: #e2e6ea;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toast__btn:focus {
+  box-shadow: initial;
 }
 
 @-moz-keyframes tooltip {
@@ -274,9 +330,14 @@ img {
 }
 /* ==================== / ICON-BURGER ==================== */
 
+.page-header__content {
+  flex-grow: 1;
+  padding: 0 30px 0 10px;
+}
+
 .page-header__text {
-  margin: 0 auto;
-  font-size: 17px;
+  margin: 0;
+  text-align: center;
 }
 /* ==================== / PAGE-HEADER ==================== */
 
@@ -539,10 +600,33 @@ img {
   border-radius: 50%;
   background-color: #6675FF;
   overflow: hidden;
-  background-image: url("../img/calc-opt.svg");
   background-size: 24px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+.nav__icon--calculator {
+  background-image: url("../img/calc-opt.svg");
+}
+
+.nav__icon--something1 {
+  background-image: url("../img/calc-opt.svg");
+}
+
+.nav__icon--something2 {
+  background-image: url("../img/calc-opt.svg");
+}
+
+.nav__icon--something3 {
+  background-image: url("../img/calc-opt.svg");
+}
+
+.nav__icon--something4 {
+  background-image: url("../img/calc-opt.svg");
+}
+
+.nav__icon--something5 {
+  background-image: url("../img/calc-opt.svg");
 }
 /* ==================== / NAV ==================== */
 

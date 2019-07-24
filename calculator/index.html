@@ -15,12 +15,14 @@
     <header class="page-header">
       <div class="container  page-header__layout">
         <button class="page-header__btn  page-header__btn--menu" type="button">
-          <div class="icon-burger">
+          <span class="icon-burger">
             <span class="icon-burger__inner  icon-burger__inner--1"></span>
             <span class="icon-burger__inner  icon-burger__inner--2"></span>
-          </div>
+          </span>
         </button>
-        <p class="page-header__text">Какой-то текст</p>
+        <div class="page-header__content">
+          <p class="page-header__text">Калькулятор</p>
+        </div>
       </div>
     </header>
 
@@ -32,7 +34,7 @@
             <div class="calculator__descr">Суммированный вес использованных памперсов за 24 часа
             </div>
             <label class="calculator__label">
-              <input class="calculator__field" data-field="1" id="field-5" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="1" type="number" placeholder=" ">
               <span class="calculator__placeholder">в граммах</span>
             </label>
           </div>
@@ -40,7 +42,7 @@
           <div class="calculator__row">
             <div class="calculator__descr">Вес одного чистого (сухого) памперса</div>
             <label class="calculator__label">
-              <input class="calculator__field" data-field="2" id="field-2" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="2" type="number" placeholder=" ">
               <span class="calculator__placeholder">в граммах</span>
             </label>
           </div>
@@ -48,15 +50,15 @@
           <div class="calculator__row">
             <div class="calculator__descr">Количество использованных памперсов за 24 часа</div>
             <label class="calculator__label">
-              <input class="calculator__field" data-field="3" id="field-3" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="3" type="number" placeholder=" ">
               <span class="calculator__placeholder">штук</span>
             </label>
           </div>
 
           <div class="calculator__row">
             <div class="calculator__descr">Количество мочеиспусканий вне памперса за сутки</div>
-            <label for="" class="calculator__label">
-              <select class="calculator__field  calculator__select" data-field="4" id="field-4">
+            <label class="calculator__label">
+              <select class="calculator__field  calculator__select" data-field="4">
                 <option value="0" class="calculator__option" selected>0</option>
                 <option value="30" class="calculator__option">1</option>
                 <option value="60" class="calculator__option">2</option>
@@ -81,7 +83,7 @@
           <div class="calculator__row">
             <div class="calculator__descr">Объём докорма за сутки</div>
             <label class="calculator__label">
-              <input class="calculator__field" data-field="5" id="field-6" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="5" type="number" placeholder=" ">
               <span class="calculator__placeholder">в миллилитрах</span>
             </label>
           </div>
@@ -89,7 +91,7 @@
           <div class="calculator__row">
             <div class="calculator__descr">Объём воды за сутки (если есть допаивание)</div>
             <label class="calculator__label">
-              <input class="calculator__field" data-field="6" id="field-7" type="number" placeholder=" ">
+              <input class="calculator__field" data-field="6" type="number" placeholder=" ">
               <span class="calculator__placeholder">в миллилитрах</span>
             </label>
           </div>
@@ -100,7 +102,9 @@
               <span class="toast__text">
                 Результат: <span class="toast__result"></span> гр.
               </span>
-              <span class="toast__action">Больше информации</span>
+              <span class="toast__action">
+                <span class="toast__btn">Больше информации</span>
+              </span>
             </span>
           </button>
         </div>
@@ -108,39 +112,22 @@
 
       <div class="screen" id="screen2">
         <div class="container">
-          <h2>SCREEN 2</h2>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            Ручеек
-            власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
-          </p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            Ручеек
-            власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
-          </p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            Ручеек
-            власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
-          </p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            Ручеек
-            власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
-          </p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            Ручеек
-            власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
-          </p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            Ручеек
-            власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
-          </p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            Ручеек
-            власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
-          </p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            Ручеек
-            власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
-          </p>
+          <h2>Результат менее 300 грамм</h2>
+
+          <ul>
+            <li>Далеко-далеко за словесными горами.</li>
+            <li>Далеко-далеко за словесными горами.</li>
+            <li>Далеко-далеко за словесными горами.</li>
+            <li>Далеко-далеко за словесными горами.</li>
+          </ul>
+
+          <ul class="custom-list">
+            <li class="custom-list__item">Далеко-далеко за словесными горами.</li>
+            <li class="custom-list__item">Далеко-далеко за словесными горами.</li>
+            <li class="custom-list__item">Далеко-далеко за словесными горами.</li>
+            <li class="custom-list__item">Далеко-далеко за словесными горами.</li>
+          </ul>
+
           <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
             Ручеек
             власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
@@ -154,7 +141,7 @@
 
       <div class="screen" id="screen3">
         <div class="container">
-          <h2>SCREEN 3</h2>
+          <h2>Результат от 300 до 380 грамм</h2>
           <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
             Ручеек
             власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
@@ -200,7 +187,7 @@
 
       <div class="screen" id="screen4">
         <div class="container">
-          <h2>SCREEN 4</h2>
+          <h2>Результат более 380 грамм</h2>
           <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
             Ручеек
             власти реторический буквенных, предупредила собрал переписали страна подпоясал имени.
@@ -340,32 +327,32 @@
     <div class="sidebar">
       <div class="nav">
         <button class="nav__btn  nav__btn--active" data-screen="screen1">
-          <span class="nav__icon"></span>
+          <span class="nav__icon  nav__icon--calculator"></span>
           <span class="nav__text">Калькулятор</span>
         </button>
 
         <button class="nav__btn" data-screen="screen2">
-          <span class="nav__icon"></span>
-          <span class="nav__text">Ручеек власти реторический</span>
+          <span class="nav__icon  nav__icon--something1"></span>
+          <span class="nav__text">Менее 300 грамм</span>
         </button>
 
         <button class="nav__btn" data-screen="screen3">
-          <span class="nav__icon"></span>
-          <span class="nav__text">Далеко-далеко за словесными горами</span>
+          <span class="nav__icon  nav__icon--something2"></span>
+          <span class="nav__text">От 300 до 380 грамм</span>
         </button>
 
         <button class="nav__btn" data-screen="screen4">
-          <span class="nav__icon"></span>
-          <span class="nav__text">Далеко-далеко за словесными</span>
+          <span class="nav__icon  nav__icon--something3"></span>
+          <span class="nav__text">Более 380 грамм</span>
         </button>
 
         <button class="nav__btn" data-screen="screen5">
-          <span class="nav__icon"></span>
+          <span class="nav__icon  nav__icon--something4"></span>
           <span class="nav__text">Предупредила собрал переписали страна подпоясал имени</span>
         </button>
 
         <button class="nav__btn" data-screen="screen6">
-          <span class="nav__icon"></span>
+          <span class="nav__icon  nav__icon--something5"></span>
           <span class="nav__text">Предупредила собрал переписали</span>
         </button>
       </div>
