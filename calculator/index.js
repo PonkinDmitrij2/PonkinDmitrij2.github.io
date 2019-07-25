@@ -1,32 +1,5 @@
 "use strict";
 
-function _toConsumableArray(arr) {
-  return (
-    _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread()
-  );
-}
-
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance");
-}
-
-function _iterableToArray(iter) {
-  if (
-    Symbol.iterator in Object(iter) ||
-    Object.prototype.toString.call(iter) === "[object Arguments]"
-  )
-    return Array.from(iter);
-}
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
-      arr2[i] = arr[i];
-    }
-    return arr2;
-  }
-}
-
 var menuBtn = document.querySelector(".page-header__btn--menu");
 var overlay = document.querySelector(".overlay");
 var navigation = document.querySelector(".nav");
@@ -43,16 +16,14 @@ var switchSidebar = function switchSidebar() {
 var calculator = {
   result: 0,
   calc: function calc() {
-    var values = _toConsumableArray(
-      document.querySelectorAll(".calculator__field")
-    )
+    var values = []
+      .concat(document.querySelectorAll(".calculator__field"))
       .sort(function(a, b) {
         return Number(a.dataset.field) - Number(b.dataset.field);
       })
       .map(function(field) {
         return Number(field.value);
       });
-
     this.result =
       values[0] -
       values[1] * values[2] +
@@ -68,20 +39,23 @@ var screen = {
         return '<div class="page-header__content">\n        <p class="page-header__text">\u041A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440</p>\n      </div>';
 
       case "screen2":
-        return '<div class="page-header__content">\n        <p class="page-header__text">\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: '.concat(
-          calculator.result,
+        return (
+          '<div class="page-header__content">\n        <p class="page-header__text">\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: ' +
+          calculator.result +
           " \u0433\u0440.</p>\n      </div>"
         );
 
       case "screen3":
-        return '<div class="page-header__content">\n        <p class="page-header__text">\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: '.concat(
-          calculator.result,
+        return (
+          '<div class="page-header__content">\n        <p class="page-header__text">\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: ' +
+          calculator.result +
           " \u0433\u0440.</p>\n      </div>"
         );
 
       case "screen4":
-        return '<div class="page-header__content">\n        <p class="page-header__text">\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: '.concat(
-          calculator.result,
+        return (
+          '<div class="page-header__content">\n        <p class="page-header__text">\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: ' +
+          calculator.result +
           " \u0433\u0440.</p>\n      </div>"
         );
 
@@ -108,28 +82,22 @@ var screen = {
       toggleClass,
       targetElemSelector
     ) {
-      container
-        .querySelector(".".concat(toggleClass))
-        .classList.remove(toggleClass);
+      container.querySelector("." + toggleClass).classList.remove(toggleClass);
       container.querySelector(targetElemSelector).classList.add(toggleClass);
     };
 
-    toggleActive(mainContent, SCREEN_ACTIVE, "[id=".concat(screenId, "]"));
+    toggleActive(mainContent, SCREEN_ACTIVE, "[id=" + screenId + "]");
     window.scroll(0, 0);
-    toggleActive(
-      navigation,
-      NAV_BTN_ACTIVE,
-      "[data-screen=".concat(screenId, "]")
-    );
+    toggleActive(navigation, NAV_BTN_ACTIVE, "[data-screen=" + screenId + "]");
   }
 };
 
 var navBtnHandler = function navBtnHandler(_ref) {
   var target = _ref.target;
-  var button = target.closest(".nav__btn:not(.".concat(NAV_BTN_ACTIVE, ")"));
+  var button = target.closest(".nav__btn:not(." + NAV_BTN_ACTIVE + ")");
 
   if (button) {
-    screen.switch(button.dataset.screen);
+    screen["switch"](button.dataset.screen);
   }
 
   switchSidebar();
@@ -153,11 +121,11 @@ var moreInfoHandler = function moreInfoHandler() {
   var caseTwo = calculator.result >= 300 && calculator.result <= 380;
 
   if (caseOne) {
-    screen.switch("screen2");
+    screen["switch"]("screen2");
   } else if (caseTwo) {
-    screen.switch("screen3");
+    screen["switch"]("screen3");
   } else {
-    screen.switch("screen4");
+    screen["switch"]("screen4");
   }
 };
 
