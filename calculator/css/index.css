@@ -171,7 +171,8 @@ img {
 /* ==================== $TOAST ==================== */
 .toast {
   position: absolute;
-  bottom: calc(100% + 70px);
+  /*bottom: calc(100% + 70px);*/
+  bottom: 160px;
   left: 50%;
   display: none;
   width: 100%;
@@ -495,14 +496,14 @@ img {
   color: inherit;
   background-color: transparent;
   outline: none;
-  -webkit-transition: all 300ms ease;
+/*  -webkit-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
   -webkit-box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);*/
 }
 
-.calculator__calc-btn:before {
+/*.calculator__calc-btn:before {
   position: absolute;
   content: '';
   width: 0%;
@@ -514,15 +515,16 @@ img {
   -webkit-transition: all 0ms ease;
   -o-transition: all 0ms ease;
   transition: all 0ms ease;
-}
+}*/
 
 .calculator__calc-btn:focus {
   color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  background-color: rgb(33, 150, 243);
+/*  -webkit-box-shadow: none;
+          box-shadow: none;*/
 }
 
-.calculator__calc-btn:focus:before {
+/*.calculator__calc-btn:focus:before {
   position: absolute;
   content: '';
   width: 100%;
@@ -534,7 +536,7 @@ img {
   -webkit-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
-}
+}*/
 
 .calculator__calc-btn:focus .toast {
   display: block;
