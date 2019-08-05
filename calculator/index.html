@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calc App</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/index.css">
-</head>
+<link href="css/bundle.css" rel="stylesheet"></head>
 
 <body>
   <div class="page-wrapper">
@@ -21,13 +19,22 @@
           </span>
         </button>
         <div class="page-header__content">
-          <p class="page-header__text">Калькулятор</p>
+          <p class="page-header__text"></p>
         </div>
       </div>
     </header>
 
     <div class="main-content">
-      <div class="calculator  screen  screen--show" id="screen1">
+      <div class="promo  screen  screen--show" id="screen0">
+        <div class="container">
+          <div class="promo__img-wrap">
+            <img class="promo__img" src="./img/test.jpg" alt="">
+          </div>
+          <p class="promo__text  text-center  font-bold">Стартовый экран!</p>
+        </div>
+      </div>
+
+      <div class="calculator  screen" id="screen1">
         <div class="container">
 
           <div class="calculator__row">
@@ -327,8 +334,146 @@
     </div>
 
     <div class="sidebar">
-      <div class="nav">
-        <button class="nav__btn  nav__btn--active" data-screen="screen1">
+      <ul class="nav">
+        <li class="nav__item">
+          <button class="nav__btn  nav__btn--drop  nav__btn--calculator" type="button">
+            Калькулятор
+          </button>
+
+          <ul class="submenu">
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" data-screen="screen1" type="button">
+                Калькулятор
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" data-screen="screen2" type="button">
+                Менее 300 грамм
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" data-screen="screen3" type="button">
+                От 300 до 380 грамм
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" data-screen="screen4" type="button">
+                Более 380 грамм
+              </button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <button class="nav__btn  nav__btn--drop  nav__btn--attachment" type="button">
+            Правильное прикладывание
+          </button>
+
+          <ul class="submenu">
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 1
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 2
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 3
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 4
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 5
+              </button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <button class="nav__btn  nav__btn--drop  nav__btn--articles" type="button">
+            Статьи
+          </button>
+
+          <ul class="submenu">
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 1
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 2
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 3
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 4
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 5
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 6
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 7
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 8
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 9
+              </button>
+            </li>
+            <li class="submenu__item">
+              <button class="submenu__btn  screen-toggle-btn" type="button">
+                Пункт 10
+              </button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <button class="nav__btn  nav__btn--consultations  screen-toggle-btn" data-screen="screen5"
+            type="button">
+            <span class="nav__text">Консультации</span>
+          </button>
+        </li>
+
+        <li class="nav__item">
+          <button class="nav__btn  nav__btn--info  screen-toggle-btn" data-screen="screen6"
+            type="button">
+            <span class="nav__text">Информация</span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- <div class="nav">
+        <button class="nav__btn" data-screen="screen1">
           <span class="nav__icon  nav__icon--calculator"></span>
           <span class="nav__text">Калькулятор</span>
         </button>
@@ -357,12 +502,11 @@
           <span class="nav__icon  nav__icon--something5"></span>
           <span class="nav__text">Предупредила собрал переписали</span>
         </button>
-      </div>
+      </div> -->
     </div>
     <div class="overlay"></div>
   </div>
 
-  <script src="./index.js"></script>
-</body>
+<script type="text/javascript" src="js/bundle.js"></script></body>
 
 </html>
