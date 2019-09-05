@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sounds</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="sounds">
+    <div class="sounds__item  sound">
+      <p>Sound 1</p>
+      <audio class="sound__audio" loop>
+        <source src="./audio/t-rex-roar.mp3">
+      </audio>
+
+      <div class="sound__play-control"></div>
+
+      <input class="sound__volume-control" type="range" min="0" max="100" step="1" value="50">
+    </div>
+
+    <div class="sounds__item  sound">
+      <p>Sound 2</p>
+      <audio class="sound__audio" loop>
+        <source src="./audio/alert-01.mp3">
+      </audio>
+
+      <div class="sound__play-control"></div>
+
+      <input class="sound__volume-control" type="range" min="0" max="100" step="1" value="50">
+    </div>
+
+    <div class="sounds__item  sound">
+      <p>Sound 3</p>
+      <audio class="sound__audio" loop>
+        <source src="./audio/light_rain.ogg">
+      </audio>
+
+      <div class="sound__play-control"></div>
+
+      <input class="sound__volume-control" type="range" min="0" max="100" step="1" value="50">
+    </div>
+
+    <div class="sounds__item  sound">
+      <p>Sound 4</p>
+      <audio class="sound__audio" loop>
+        <source src="./audio/thunder_crack.ogg">
+      </audio>
+
+      <div class="sound__play-control"></div>
+
+      <input class="sound__volume-control" type="range" min="0" max="100" step="1" value="50">
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
