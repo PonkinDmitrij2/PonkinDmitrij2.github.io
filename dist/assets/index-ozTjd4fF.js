@@ -1,0 +1,1 @@
+import"./style-_V2jyCbl.js";function c(t){let e=0;const o=n=>{e=n,t.innerHTML=`count is ${e}`};t.addEventListener("click",()=>o(e+1)),o(0)}const r=document.querySelector(".read-the-docs");console.log(r);c(document.querySelector("#counter"));
